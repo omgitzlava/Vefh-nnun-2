@@ -1,0 +1,32 @@
+
+/* :root er „global“ staðsetning, --eigindin sem eru þar er hægt að nota í öllum stílsetningum. */
+
+:root {
+    --bodyColor: rgb(109, 97, 97);
+    --bodyFont: 'inconsolata', 'Roboto';
+    --a: rgb(19, 104, 112);
+    --visited: rgb(33, 140, 150);
+    --hover: rgb(33, 140, 150); 
+    --footerbg: linear-gradient(rgb(183, 232, 236),rgb(125, 221, 230));
+    --bodyBg: linear-gradient(60deg, rgb(167, 204, 246),rgb(134, 226, 234));
+  }
+  
+  
+  body {
+    color: var(--body);
+  }
+  a {
+    color: var(--a); 
+  }
+  a:visited {
+    color: var(--visited); 
+  }
+  a:hover,
+  a:active {
+    color: var(--hover);
+    text-decoration: none;
+  }
+  .footerbg {
+    background-image: var(--footerbg);
+  }
+  

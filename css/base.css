@@ -14,7 +14,7 @@
   - Images
   - Media Queries
 */
-
+@import url("variables.css");
 html {
     scroll-behavior: smooth;
   }
@@ -26,10 +26,17 @@ html {
     font-size: 1em;
     line-height: 1.6;
     font-weight: 400;
-    font-family: 'Roboto Slab', serif;
-    color: #222; 
+    font-family: var(--bodyFont);
+    color: var(--bodyColor);
+    background-image: var(--bodyBg);
   }
-    
+  footer {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.6;
+    font-weight: 400;
+    background-image: var(--footerbg)
+  } 
   /* Typography
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   h1, h2, h3 {
