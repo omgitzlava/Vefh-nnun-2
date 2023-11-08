@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/grid.css">
     <!--link rel="stylesheet" href="css/grid.css"-->
     <!-- stílsíður sem við eigum eftir að bæta við-->
     <!--link rel="stylesheet" href="css/iconfont.css"-->
@@ -22,8 +23,155 @@
     <link rel="icon" type="image/svg" href="images/rwd-icon.svg">
 </head>
 <body id="top">
-  <nav class="topnav">
-  </nav>
+  <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="Products.html">Products</a>
+    <a href="Contact.html">Contact</a>
+    <a href="About.html">About</a>
+  </div>
+  <br>
+ <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="images/TransBlahaj.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/BlahajDrums.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/BlahajSniper.jpg" style="width:100%">
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div> 
+
+  <!--Javascript for Slideshow-->
+  <script>
+    let slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  } 
+  </script>
+
+
+
+<section class="col-2">
+  <div>
+    <h1>lorem ipsum</h1>
+    <p>
+
+      Atque aut qui aut at cumque qui. Sunt modi sed perferendis modi ea dicta exercitationem quis. Blanditiis eius voluptatum labore qui maiores dolores culpa doloremque. Sit odit ex assumenda voluptatibus et ea a. Asperiores nihil qui eos natus aut dicta velit.
+      <br>
+      Aliquid explicabo dicta consectetur labore sunt voluptatem ut molestias. Sed voluptate quasi in et modi consequatur. Repellendus debitis magni autem sed. Accusamus provident ex exercitationem vel hic nostrum. Et consequatur ut necessitatibus quod est suscipit et.
+      <br>
+      Ipsa sint explicabo debitis itaque ut aperiam dicta amet. Libero voluptates beatae vel accusamus in. Reprehenderit quidem labore consectetur temporibus tempora officiis placeat quia. Qui cupiditate rerum et aut culpa.
+      <br>
+      Eaque culpa debitis unde inventore doloribus qui qui. Ratione qui perferendis ea quisquam. Beatae ut velit in aut sapiente. Quibusdam odit incidunt eligendi.
+      <br>
+      Exercitationem omnis illo sint aliquam. Corrupti aut dolor iste ab perspiciatis quia. Quas non similique error ut doloremque nobis magnam et. Non officiis molestiae sequi beatae molestias est odio quasi. Architecto quis enim odit molestias debitis.
+      </p>
+  </div>
+  <div>
+    <h1>lorem ipsum</h1>
+    <p>
+
+      Atque aut qui aut at cumque qui. Sunt modi sed perferendis modi ea dicta exercitationem quis. Blanditiis eius voluptatum labore qui maiores dolores culpa doloremque. Sit odit ex assumenda voluptatibus et ea a. Asperiores nihil qui eos natus aut dicta velit.
+      <br>
+      Aliquid explicabo dicta consectetur labore sunt voluptatem ut molestias. Sed voluptate quasi in et modi consequatur. Repellendus debitis magni autem sed. Accusamus provident ex exercitationem vel hic nostrum. Et consequatur ut necessitatibus quod est suscipit et.
+      <br>
+      Ipsa sint explicabo debitis itaque ut aperiam dicta amet. Libero voluptates beatae vel accusamus in. Reprehenderit quidem labore consectetur temporibus tempora officiis placeat quia. Qui cupiditate rerum et aut culpa.
+      <br>
+      Eaque culpa debitis unde inventore doloribus qui qui. Ratione qui perferendis ea quisquam. Beatae ut velit in aut sapiente. Quibusdam odit incidunt eligendi.
+      <br>
+      Exercitationem omnis illo sint aliquam. Corrupti aut dolor iste ab perspiciatis quia. Quas non similique error ut doloremque nobis magnam et. Non officiis molestiae sequi beatae molestias est odio quasi. Architecto quis enim odit molestias debitis.
+      </p>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   <header class="container" id="top">
     <section>
         <h1>Stop coding non-structured web sites. Let's do it right.</h1>
