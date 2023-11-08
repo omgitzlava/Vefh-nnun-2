@@ -1,3 +1,3 @@
 this is a README :3
 
-![site map and stuff](media/site%20layout.svg)
+![site map and stuff](images/site%20layout.svg)
