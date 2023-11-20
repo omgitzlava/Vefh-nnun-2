@@ -2,4 +2,14 @@
     display:grid;
     grid-template-columns: 1fr 1fr;
     gap: 1em;
+    padding:1em;
+}
+
+@media screen and (max-width:48em) {
+    .col-2{
+    display:grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    padding:1em;
+    }
 }
