@@ -24,10 +24,15 @@
 </head>
 <body id="top">
   <div class="topnav">
-    <a href="index.html">Home</a>
-    <a href="Products.html">Products</a>
-    <a class="active" href="#contact.html">Contact</a>
-    <a href="About.html">About</a>
+    <div class="navbar-toggle" onclick="toggleNav()">
+      <span class="icon">&#9776;</span> <!-- This is the hamburger icon, you can customize it -->
+    </div>
+    <div class="navbar-links" id="navbarLinks">
+      <a href="index.html">Home</a>
+      <a href="Products.html">Products</a>
+      <a href="About.html">About</a>
+      <a class="active" href="Contact.html">Contact</a>
+    </div>
   </div>
   <div class="box">
     <a class="button2" href="#popup1"><img style= "width:2em", src="images/ChatIcon.png" alt=""></a>
@@ -92,3 +97,5 @@
     </fieldset>
 </form>
 </body>
+
+<script src="css/script.js"></script>
