@@ -15,6 +15,8 @@
   - Media Queries
 */
 @import url("variables.css");
+@import url("popup.css");
+@import url("accordion.css");
 html {
     scroll-behavior: smooth;
   }
@@ -180,7 +182,7 @@ html {
     border: 1px solid #007ca1;
     outline: 0; }
   
-  label,
+  
   legend {
     display: block;
     margin-bottom: .4em;
@@ -429,3 +431,15 @@ table, th, td {
 th {
   background-color:rgb(80, 80, 213);
 }
+.register input[type="text"], .register input[type="email"], .register input[type="tel"], textarea {
+  display: block;
+  border: 1px solid grey;
+  border-radius: .2em;
+  width: 90%;
+  padding: .5em;
+  margin: .3em 0;
+  box-shadow: inset 2px 3px 5px rgb(167, 166, 166);}
+
+  .register input[type="radio"] {
+    display:inline
+  }

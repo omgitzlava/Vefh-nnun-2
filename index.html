@@ -24,11 +24,30 @@
 </head>
 <body id="top">
   <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="Products.html">Products</a>
-    <a href="Contact.html">Contact</a>
-    <a href="About.html">About</a>
+    <div class="navbar-toggle" onclick="toggleNav()">
+      <span class="icon">&#9776;</span> <!-- This is the hamburger icon, you can customize it -->
+    </div>
+    <div class="navbar-links" id="navbarLinks">
+      <a href="index.html">Home</a>
+      <a href="About.html">About</a>
+      <a href="Products.html">Products</a>
+      <a href="Contact.html">Contact</a>
+    </div>
   </div>
+  <div class="box">
+    <a class="button2" href="#popup1"><img style= "width:2em", src="images/ChatIcon.png" alt=""></a>
+  </div>
+
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <h2>Here I am</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        This was a popup! I am empty right now tho but I am here! :D
+      </div>
+    </div>
+  </div>
+
   <br>
  <!-- Slideshow container -->
   <div class="slideshow-container">
@@ -340,3 +359,5 @@
   </footer>
 </body>
 </html>
+
+<script src="css/script.js"></script>

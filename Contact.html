@@ -24,9 +24,71 @@
 </head>
 <body id="top">
   <div class="topnav">
-    <a class="active" href="#home">Home</a>
+    <a href="index.html">Home</a>
     <a href="Products.html">Products</a>
-    <a href="Contact.html">Contact</a>
+    <a class="active" href="#contact.html">Contact</a>
     <a href="About.html">About</a>
   </div>
+  <div class="box">
+    <a class="button2" href="#popup1"><img style= "width:2em", src="images/ChatIcon.png" alt=""></a>
+  </div>
+
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <h2>Here I am</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        This was a popup! I am empty right now tho but I am here! :D
+      </div>
+    </div>
+  </div>
+
+
+
+  <form action="postur-ok.html" method="GET"><!--"POST" er notað þegar upplýsingar eru sendar úr formi-->
+    <fieldset class="register"><!--nota klasa til að geta haft aðra forma með öðru útliti - sjá css-->
+      <legend>Hafðu samband!</legend>
+      <p><!--autofocus-->
+          Nafn:  
+          <input type="text" name="nafn" placeholder="Full name" required="" title="Vinsamlegast skráið nafn"> <!--ATH! input hefur ekki lokunartag -->
+      </p>
+        <p>Kyn: 
+          <input type="radio" name="kyn" value="Hann" id="Hann">
+          <label for="Hann">Hann</label> |
+          <input type="radio" name="kyn" value="Hún" id="Hún"> 
+          <label for="Hún">Hún</label> |
+          <input type="radio" name="kyn" value="Hán" id="Hán"> 
+          <label for="Hán">Hán</label> 
+        </p>
+        <p>
+            Símanúmer: 
+            <input type="text" name="sími" placeholder="Telephone (7 digits)" title="Vinsamlegast skráið aðeins 7 tölustafi" required="" pattern="\d{3}(?:[\-\s]?)\d{4}">
+        </p>    <!-- http://html5pattern.com/Phones "\d{3}(?:[\-\s]?)\d{4}" -->
+        <p>
+          Tölvupóstur: 
+          <input type="email" name="tölvupóstur" placeholder="Email address" required="">
+        </p>
+        <section class="col-3">
+          <p> 
+            Tegund af skilaboð: 
+            <select name="ferdaval">
+              <option value="1">Kaupa vöru</option>
+              <option value="2">Samband við þjónustuver</option>
+            </select>
+          </p>
+        </section>
+        <p>
+            <!--https://www.w3schools.com/tags/att_textarea_rows.asp-->
+            <textarea rows="4" name="comment" placeholder="Ábending - Comment"></textarea>
+        </p>
+        <p>
+          <input type="checkbox" name="postlist" value="OK" id="plist"> 
+          <label for="plist">Skráið mig á póstlistann</label> |
+          <input type="checkbox" name="subscription" value="OK" id="sub"> 
+          <label for="sub">Gerast áskrifandi </label>
+        </p><p>
+        </p>
+        <p class="center"><input type="submit" name="submit" value="Send"></p>
+    </fieldset>
+</form>
 </body>
