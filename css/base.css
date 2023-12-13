@@ -31,6 +31,7 @@ html {
     font-family: var(--bodyFont);
     color: var(--bodyColor);
     background-image: var(--bodyBg);
+    text-shadow: 1px 1px 1px rgb(44, 44, 44); 
   }
   footer {
     margin: 0;
