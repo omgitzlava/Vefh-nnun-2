@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS grind">
+    <meta name="author" content="Eva">
+    <title>Blåhaj</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="icomoon/style.css">
+    <!--link rel="stylesheet" href="css/grid.css"-->
+    <!-- stílsíður sem við eigum eftir að bæta við-->
+    <!--link rel="stylesheet" href="css/iconfont.css"-->
+    <!--link rel="stylesheet" href="css/topmenu.css"-->
+    <!--link rel="stylesheet" href="css/custom.css"-->
+    <!--Í síðasta verkefninu eru allar stílsíðurnar þjappaðar í eina stílsíðu -->
+    <!--link rel="stylesheet" href="css/styles.css"-->
+
+    <link rel="icon" type="image/svg" href="images/rwd-icon.svg">
+</head>
+<body id="top">
+  <div class="topnav">
+    <div class="navbar-toggle" onclick="toggleNav()">
+      <span class="icon">&#9776;</span> 
+    </div>
+    <div class="navbar-links" id="navbarLinks">
+      <a class="active" href="index.html">Home</a>
+      <a href="Products.html">Products</a>
+      <a href="Contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="box">
+    <a class="button2" href="#popup1"><img style= "width:2em", src="images/ChatIcon.png" alt=""></a>
+  </div>
+
+  <div id="popup1" class="overlay">
+    <div class="popup">
+      <h2>Here I am</h2>
+      <a class="close" href="#">&times;</a>
+      <div class="content">
+        This was a popup! I am empty right now tho but I am here! :D
+      </div>
+    </div>
+  </div>
+
+  
+ <!-- Slideshow container -->
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <img src="images/TransBlahaj.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/BlahajDrums.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/BlahajSniper.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="images/BlahajAnatomy.jpg" style="width:100%">
+    </div>
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div> 
+
+  <!--Javascript for Slideshow-->
+  <script>
+    let slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  } 
+  </script>
+
+
+
+<section class="col-1 container">
+  <h1>Introducing the Blåhaj Plushie: Embracing Comfort and Inclusivity for Trans Children</h1>
+  <div>
+    <p>At Blåhaj Incorporated, we believe in the power of comfort, inclusivity, and the joy that a cherished plushie can bring. That's why we are on a mission to transform the beloved Blåhaj into an amazing plushie designed specifically for trans children, providing them with a source of solace, companionship, and a sense of safety.</p>
+    
+    <p>Blåhaj, with its soft and huggable design, has already captured the hearts of many around the world. Its endearing qualities make it the perfect candidate to become more than just a plush toy; it can be a beacon of support and understanding for trans children navigating their unique journeys.</p>
+    
+    <p>Our commitment to inclusivity drives us to create a product that goes beyond the ordinary. We recognize the importance of representation and the need for products that resonate with every child, regardless of their gender identity. The Blåhaj Plushie serves as a symbol of acceptance, warmth, and affirmation for trans children who deserve to feel seen and valued.</p>
+    
+    <p>Here at Blåhaj Incorporated, we understand that the journey of self-discovery can be challenging, especially for young minds. The Blåhaj Plushie aims to be a comforting companion, providing a safe space for trans children to express themselves freely and embrace their authentic selves. We believe that everyone deserves a plushie that reflects their identity and makes them feel understood.</p>
+    
+    <p>Join us in this meaningful mission as we strive to create not just a plushie but a source of comfort and empowerment. Together, let's make the Blåhaj Plushie a beacon of love, acceptance, and understanding for trans children everywhere. Because every child deserves a plushie that hugs them back and says, "You are perfect just as you are."</p>
+    
+  </div>
+</section>
+
+  <footer class="container centre">
+    <hr>
+    <img src="images/rwd-logo.svg" width="100">
+    <p><a href=#top class="button">Top of the Page</a></p>
+  </footer>
+</body>
+</html>
+
+<script src="css/script.js"></script>
